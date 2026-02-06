@@ -18,6 +18,8 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost:
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
+        "sidebar-primary": "bg-black text-white hover:bg-black/80",
+        "sidebar-ghost": "text-black hover:bg-transparent active:bg-transparent",
         link: "text-primary underline-offset-4 hover:underline",
       },
       size: {
@@ -29,6 +31,10 @@ const buttonVariants = cva(
         "icon-xs": "size-6 rounded-md [&_svg:not([class*='size-'])]:size-3",
         "icon-sm": "size-8",
         "icon-lg": "size-10",
+        "sidebar-primary":
+          "h-12 gap-2 rounded-full px-7 text-sm leading-[0.8] font-semibold",
+        "sidebar-regenerate":
+          "h-[34px] gap-1 rounded-[10px] py-[7px] pl-[7px] pr-3 text-xs leading-[1.2] font-semibold has-[>svg]:pl-[7px] has-[>svg]:pr-3",
       },
     },
     defaultVariants: {
